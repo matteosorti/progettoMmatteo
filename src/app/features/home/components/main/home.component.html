@@ -1,0 +1,82 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="box">
+    <div class="colored-bk">
+        <div class="header">
+            <div class="grid-container">            
+
+                <div class="grid-left">
+
+                </div>
+
+                <div class="grid-center"><p class="welcome-title">Welcome <b id="user">{{user | async}}</b></p></div>
+                    
+                <div class="grid-shop">
+                    <table>
+                        <tr>
+                            <td class="material-icons">
+                                shopping_cart
+                            </td>
+                            <td routerLink="/cart">Carrello</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class=container>
+        <div id="opacity_left"></div>
+        <div id="opacity_right"></div>
+        <div id="proparallax">
+            <img class="one" src="../assets/images/xbox_shop.jpg" />
+            <img class="two" src="../assets/images/felpa.jpg" />
+            <img class="three" src= />
+        </div>
+        
+        
+    </div>
+    -->
+
+    <div class="grid-carousel">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a routerLink="/products/edit/1"><img src="../assets/images/home/carosel/calzini.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                    <a routerLink="/products/edit/2"><img src="../assets/images/home/carosel/felpe.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                    <a routerLink="/products/edit/3"><img src="../assets/images/home/carosel/magliette.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                    <a routerLink="/products/edit/4"><img src="../assets/images/home/carosel/pantaloncini.jpg"></a>
+                </div>
+            </div>
+                
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    
+    <button routerLink="/products/edit/1" class="prodLink">PERSONALIZZA ORA</button>
+</div>
+
+
+
+

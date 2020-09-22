@@ -1,0 +1,68 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="box">
+    <div class="colored-bk">
+        <div class="header">
+            <div class="grid-container">            
+
+                <div class="grid-home">
+                    <table>
+                        <tr routerLink="/home">
+                            <td class="material-icons">
+                                home
+                            </td>
+                            <td>Home</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="grid-center"><p class="welcome-title"><b>Carrello</b></p></div>
+                    
+                <div class="grid-shop">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class=container>
+        <div id="opacity_left"></div>
+        <div id="opacity_right"></div>
+        <div id="proparallax">
+            <img class="one" src="../assets/images/xbox_shop.jpg" />
+            <img class="two" src="../assets/images/felpa.jpg" />
+            <img class="three" src= />
+        </div>
+        
+        
+    </div>
+    -->
+
+    <div class="container">
+        <table *ngFor="let product of products | async" class="tab-preview">
+            <tr>
+                <td rowspan="4"><img src="{{product?.product?.image}}" class="img"></td>
+                <td id="int">Prodotto</td>
+                <td id="data">{{product?.product?.title}}</td>
+            </tr>
+
+            <tr>
+                <td id="int">Colore</td>
+                <td id="data">{{product?.product?.steps[0].color}}</td>
+            </tr>
+
+            <tr>
+                <td id="int">Testo</td>
+                <td id="data">{{product?.product?.steps[0].description}}</td>
+            </tr>
+
+            <tr>
+                <td id="int">Colore Testo</td>
+                <td id="data">{{product?.product?.steps[0].textColor}}</td>
+            </tr>
+        </table>
+        <button [routerLink]="'/cart/secondo-step'" class="btn-prosegui">prosegui</button>
+    </div>
+    
+    
+</div>
+

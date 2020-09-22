@@ -1,0 +1,3 @@
+<div class="container">
+    <app-products-form (formSubmitEvent)="editForm($event)" [products]="products| async" (undoEvent)="undo($event)"></app-products-form>
+</div>

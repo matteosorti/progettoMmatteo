@@ -1,0 +1,107 @@
+.box{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.colored-bk{
+    background: rgb(109,210,253);
+    background: linear-gradient(90deg, rgba(76, 176, 219,1) 35%, rgba(193,128,255,1) 100%);
+    height: 200px;
+}
+
+.header{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.grid-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    color: white;   
+}
+
+.grid-center{
+    text-align: center;
+    font-size: 2.5vw;
+    letter-spacing: 1%;
+}
+
+.grid-center p{
+    margin-top:3%;
+}
+
+.grid-home > table{
+    float: left;
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 2vw;
+    border-spacing: 10px;
+}
+
+.material-icons{
+    color: white;
+    font-size: 2.5vw;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6%;
+    width: 50%;
+    background-color: white;
+}
+
+.tab-info{
+    border-collapse: separate;
+    margin: auto;
+    width: 100%;
+    border-spacing: 15px;
+    padding-bottom:50px;
+    margin-bottom:20px;
+    border-bottom: 2px rgba(193,128,255,1) solid;
+    margin-top:10px;
+    text-align: left;
+}
+
+.tab-buttons{
+    border-collapse: separate;
+    margin: auto;
+    width: 95%;
+    margin-bottom:20px;
+}
+
+#info-number{
+    width: 30%;
+}
+
+#annulla{
+    float: left;
+    background-color: white;
+    color: rgba(193,128,255,1); 
+}
+
+#prosegui {
+    float: right; 
+    background-color: rgba(193,128,255,1);
+    color: white;   
+}
+
+button{
+    width: 60%;
+    padding:10px;
+    font-weight:bold;
+    border: 2px rgba(193,128,255,1) solid;
+    border-radius: 5px;
+}
+
+.dot{
+    font-size: 20px;
+}
+
+.selezionato{
+    color: red;
+}

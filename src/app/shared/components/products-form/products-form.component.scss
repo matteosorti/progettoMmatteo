@@ -1,0 +1,103 @@
+
+.img{
+    width: 100%;
+    border:none;
+}
+
+#td-img{
+    border: 20px lightgray solid;
+}
+
+td{
+    width: 50%;
+    padding:5px
+}
+
+form{
+    padding:1vw;
+}
+
+.tab-info{
+    text-align: left;
+    width: 100%;
+    border-collapse: separate;
+    margin: auto;
+    border-spacing: 5px;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+.radio{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+label{
+    border-radius: 50%;
+    border: 1px black solid;
+    margin-left: 5px;
+    margin-top: 1%; 
+}
+
+.grid-image img{
+    height: 80%;
+    width: 80%;
+}
+
+label img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+[type=radio]:checked + img {
+    border: 2px solid rgba(193,128,255,1);
+}
+
+
+
+.btn-color{
+    border:1px solid grey;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 1vh;
+}
+
+.btn-color:hover{
+    border:1px solid rgba(193,128,255,1);
+}
+
+#red{background-color: red;}
+#yellow{background-color: yellow;}
+#orange{background-color: orange;}
+#green{background-color: green;}
+#lightblue{background-color: lightblue;}
+#blue{background-color: blue;}
+#black{background-color: black;}
+#white{background-color: white;}
+
+#annulla{
+    float: left;
+    background-color: white;
+    color: rgba(193,128,255,1); 
+}
+
+#prosegui {
+    float: right;
+    background-color: rgba(193,128,255,1); 
+    color: white; 
+}
+
+.btn-step{
+    width: 70%;
+    padding:10px;
+    font-weight:bold;
+    border: 2px rgba(193,128,255,1) solid;
+    border-radius: 5px;
+}

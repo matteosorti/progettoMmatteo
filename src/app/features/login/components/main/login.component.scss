@@ -1,0 +1,40 @@
+.card-body{
+    background-color: rgba(181, 222, 243, 0.918);
+    box-shadow: rgb(103, 127, 236) 1em 1em;
+    border: 0.1em lightgrey solid;
+    text-align: center;
+    width:50%;
+    margin: 5% auto;
+    color: white;
+    border-radius: 20%;
+}
+
+form{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+p{
+    margin-bottom: 3%;
+    color:rgb(103, 127, 236);
+    font-size: 5vw;
+    font-weight: bold;
+}
+  
+.login-button{
+    border-radius: 5%;
+    border: none;
+    background-color:rgb(103, 127, 236);
+    width: 15%;
+    margin-top: 3%;
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+}
+  
+.center{
+    text-align: center;
+}

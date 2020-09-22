@@ -1,0 +1,76 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="box">
+    <div class="colored-bk">
+        <div class="header">
+            <div class="grid-container">            
+
+                <div class="grid-home">
+                    <table>
+                        <tr routerLink="/home">
+                            <td class="material-icons">
+                                home
+                            </td>
+                            <td>Home</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="grid-center"><p class="welcome-title"><b>Carrello</b></p></div>
+                    
+                <div class="grid-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class=container>
+        <div id="opacity_left"></div>
+        <div id="opacity_right"></div>
+        <div id="proparallax">
+            <img class="one" src="../assets/images/xbox_shop.jpg" />
+            <img class="two" src="../assets/images/felpa.jpg" />
+            <img class="three" src= />
+        </div>
+        
+        
+    </div>
+    -->
+
+    <div class="container">
+    <form [formGroup]="dati" (ngSubmit)="datiUtente()">
+        <table class="tab-info">
+            <tr>
+                <td colspan="2" id="info-large"><app-input-text formControlName="name" [label]="'Nome:'" class="info"></app-input-text></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><app-input-text formControlName="surname" [label]="'Cognome:'"></app-input-text></td>
+            </tr>
+            <tr>
+                <td colspan="2"><app-input-text formControlName="cellulare" [label]="'Cellulare:'"></app-input-text></td>
+            </tr>
+            <tr>
+                <td><app-input-text formControlName="citta" [label]="'Citta:'"></app-input-text></td>
+                <td id="info-cap"><app-input-text formControlName="cap" [label]="'Cap:'"></app-input-text></td>
+            </tr>   
+            <tr>
+                <td><app-input-text formControlName="indirizzo" [label]="'Indirizzo:'"></app-input-text></td>
+                <td id="info-number"><app-input-text formControlName="numero" [label]="'N°:'"></app-input-text></td>
+            </tr>
+            <tr id="tab-hr">
+                <td colspan="2"><app-input-text formControlName="informazioni" [label]="'Informazioni per citofonare:'"></app-input-text></td>
+            </tr>
+                     
+        </table>
+        <table class="tab-buttons">
+            <tr>
+                <td><button routerLink="/cart" id="annulla">Annulla</button></td>
+                <td id="dot"><span id="selezionato">•</span>••</td>
+                <td><button type="submit" id="prosegui">Prosegui</button></td>
+            </tr>
+        </table>    
+        
+    </form>
+
+</div>
+

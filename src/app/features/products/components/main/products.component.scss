@@ -1,0 +1,65 @@
+.box{
+    font-weight: lighter;
+}
+.container {
+    width: 80%;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6%;    
+}
+/* DivTable.com */
+.colored-bk{
+    background: rgb(109,210,253);
+    background: linear-gradient(90deg, rgba(76, 176, 219,1)35%, rgba(193,128,255,1) 100%);
+    height: 200px;
+}
+
+.header{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    color: white;   
+}
+
+.grid-center{
+    text-align: center;
+    font-size: 2.4vw;
+    letter-spacing: 1%;
+}
+
+.grid-center p{
+    margin-top:3%;
+}
+
+.grid-shop > table{
+    float: right;
+    margin-top: 4%;
+    margin-right: 5%;
+    font-size: 2vw;
+    border-spacing: 10px;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+
+.grid-home > table{
+    float: left;
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 2vw;
+    border-spacing: 10px;
+}
+
+.material-icons{
+    color: white;
+    font-size: 2.5vw;
+}

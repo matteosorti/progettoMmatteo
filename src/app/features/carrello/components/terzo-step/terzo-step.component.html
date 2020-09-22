@@ -1,0 +1,65 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="box">
+    <div class="colored-bk">
+        <div class="header">
+            <div class="grid-container">            
+
+                <div class="grid-home">
+                    <table>
+                        <tr routerLink="/home">
+                            <td class="material-icons">
+                                home
+                            </td>
+                            <td>Home</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="grid-center"><p class="welcome-title"><b>Carrello</b></p></div>
+                    
+                <div class="grid-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <table class="preview">
+            
+            <tr>
+                <td>Indirizzo</td>
+                <td><ng-container *ngIf="user | async as currentUser" >
+                    {{currentUser?.indirizzo}}
+                    </ng-container></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Spedito al sig.</td>
+                <td><ng-container *ngIf="user | async as currentUser" >
+                    {{currentUser?.name}}, {{currentUser?.surname}} 
+                    </ng-container></td>
+            </tr>
+        </table>
+
+        <form [formGroup]="carta" (ngSubmit)="acquista()">
+            <table class="tab-buy">
+                <tr>
+                    <td colspan="2"><app-input-text formControlName="metodoPagamento" [label]="'Metodo di pagamento: '"></app-input-text></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><app-input-text formControlName="tipoCarta" [label]="'Tipo carta: '"></app-input-text></td>
+                </tr>
+                <tr>
+                    <td><app-input-text formControlName="numeroCarta" [label]="'Numero conto:'"></app-input-text></td>
+                    <td><app-input-text formControlName="cvc" [label]="'CVV/CCv:'"></app-input-text></td>
+                </tr>
+                <tr>
+                    <td id="annulla"><button type="button" routerLink="/cart/secondo-step">Annulla</button></td>
+                    <td id="prosegui"><button type="submit" [disabled]="carta.invalid" >Prosegui</button></td>
+                </tr>
+            </table>
+        </form> 
+    </div>
+</div>

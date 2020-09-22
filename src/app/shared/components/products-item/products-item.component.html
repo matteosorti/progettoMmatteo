@@ -1,0 +1,45 @@
+<div class="preview">
+    <table>
+        <tr>
+            <td><h4>{{products?.title}}</h4></td><td><h4>{{products?.description}}</h4></td>
+        </tr>
+        
+        <tr>
+            <td><img class="img" src="{{products?.image}}"> </td><td><ng-container *ngIf="products != null && products.users && products.users.length > 0">
+                <p> Utenti: </p>
+                <li *ngFor="let user of products.users">{{user}}</li>
+            </ng-container>
+            <div *ngIf="products != null && products.steps != null && products.steps.length > 0">
+                <div *ngFor="let step of products.steps">
+                    <input type="checkbox" [(ngModel)]="step.done" disabled>
+                    <span>{{step.title}}</span>
+                </div>
+            </div>
+            
+
+            <button (click)="editClick()">Modifica</button></td>
+        </tr>
+    </table>
+</div>
+
+   <div>
+        <img class="img" src="{{products?.image}}">
+   </div>
+    
+
+
+
+        <!-- <h4>{{products?.title}}</h4>
+        <h5>{{products?.description}}</h5>
+        <img src="{{products?.image}}"> -->
+        <!-- <ng-container *ngIf="products != null && products.users && products.users.length > 0">
+            <p> Utenti: </p>
+            <li *ngFor="let user of products.users">{{user}}</li>
+        </ng-container>
+        <div *ngIf="products != null && products.steps != null && products.steps.length > 0">
+            <div *ngFor="let step of products.steps">
+                <input type="checkbox" [(ngModel)]="step.done" disabled>
+                <span>{{step.title}}</span>
+            </div>
+        </div>
+        <button (click)="editClick()">Modifica</button> -->

@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "username": "mmatteo",
+      "name": "Matteo",
+      "surname": "Sorti",
+      "indirizzo": "",
+      "cellulare": "",
+      "citta": "",
+      "informazioni": "",
+      "cap": "",
+      "numero": ""
+    }
+  ],
+  "pagamento": [
+    {
+      "pagamento": {
+        "metodoPagamento": "drfhg",
+        "tipoCarta": "hyrtsh",
+        "numeroCarta": "rsdty6h",
+        "cvc": "dtry6jdtyj67ft7j"
+      },
+      "id": 1
+    },
+    {
+      "pagamento": {
+        "metodoPagamento": "carta",
+        "tipoCarta": "mastercard",
+        "numeroCarta": "1234567890",
+        "cvc": "123"
+      },
+      "id": 2
+    },
+    {
+      "pagamento": {
+        "metodoPagamento": "carta",
+        "tipoCarta": "mastercard",
+        "numeroCarta": "1234567",
+        "cvc": "1234"
+      },
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 1,
+        "title": "maglia",
+        "description": "maglia calcio",
+        "image": "../assets/images/home/carosel/magliette.jpg",
+        "color": "nd",
+        "textColor": "nd",
+        "steps": [
+          {
+            "id": null,
+            "title": "maglia",
+            "description": "matteo",
+            "image": "maglia",
+            "color": "rosso",
+            "textColor": "bianco"
+          }
+        ]
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 1,
+        "title": "maglia",
+        "description": "maglia calcio",
+        "image": "../assets/images/home/carosel/magliette.jpg",
+        "color": "nd",
+        "textColor": "nd",
+        "steps": [
+          {
+            "id": null,
+            "title": "maglia",
+            "description": "sorti",
+            "image": "maglia",
+            "color": "giallo",
+            "textColor": "nero"
+          }
+        ]
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 4,
+        "title": "calzettoni",
+        "description": "calzettoni",
+        "image": "../assets/images/home/carosel/calzini.jpg",
+        "color": "nd",
+        "textColor": "nd",
+        "steps": [
+          {
+            "id": null,
+            "title": "calzettoni",
+            "description": "calzettoni",
+            "image": "calzettoni",
+            "color": "calzettoni",
+            "textColor": "calzettoni"
+          }
+        ]
+      },
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "maglia",
+      "description": "maglia calcio",
+      "image": "../assets/images/home/carosel/magliette.jpg",
+      "color": "nd",
+      "textColor": "nd",
+      "steps": [
+        {
+          "id": null,
+          "title": "maglia",
+          "description": "maglia",
+          "image": "maglia",
+          "color": "nd",
+          "textColor": "nd"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "pantaloncini",
+      "description": "pantaloncini",
+      "image": "../assets/images/home/carosel/pantaloncini.jpg",
+      "color": "nd",
+      "textColor": "nd",
+      "steps": [
+        {
+          "done": false,
+          "title": "pantaloncini",
+          "description": "pantaloncini",
+          "image": "pantaloncini",
+          "color": "nd",
+          "textColor": "nd",
+          "id": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "felpa",
+      "description": "felpa calcio",
+      "image": "../assets/images/home/carosel/felpe.jpg",
+      "color": "nd",
+      "textColor": "nd",
+      "steps": [
+        {
+          "id": null,
+          "title": "felpa",
+          "description": "felpa calcio",
+          "image": "felpa",
+          "color": "nd",
+          "textColor": "nd"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "calzettoni",
+      "description": "calzettoni",
+      "image": "../assets/images/home/carosel/calzini.jpg",
+      "color": "nd",
+      "textColor": "nd",
+      "steps": [
+        {
+          "id": null,
+          "title": "calzettoni",
+          "description": "calzettoni",
+          "image": "calzettoni",
+          "color": "nd",
+          "textColor": "nd"
+        }
+      ]
+    }
+  ]
+}

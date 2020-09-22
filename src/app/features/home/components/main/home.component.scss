@@ -1,0 +1,656 @@
+/* header.com */
+/*#6dd2fd c180ff*/
+
+.box{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.colored-bk{
+    background: rgb(109,210,253);
+    background: linear-gradient(90deg, rgba(76, 176, 219,1) 35%, rgba(193,128,255,1) 100%);
+    height: 200px;
+}
+
+.header{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.grid-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    color: white;   
+}
+
+.grid-center{
+    text-align: center;
+    font-size: 2.5vw;
+    letter-spacing: 1%;
+}
+
+#user{
+    font-weight: bold;
+}
+
+.grid-center p{
+    margin-top:3%;
+}
+
+.grid-shop > table{
+    float: right;
+    margin-top: 4%;
+    margin-right: 5%;
+    font-size: 2vw;
+    border-spacing: 10px;
+}
+
+.material-icons{
+    color: white;
+    margin-bottom: 3%;
+    font-size: 2.5vw;
+}
+
+.grid-carousel{
+    border: 20px solid lightgrey;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6%;
+}
+
+.prodLink{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(193,128,255);
+    width: 15%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+#opacity_left{
+
+    height: 340px;
+
+    background-color: rgba(255,255,255,0.3);    
+    border: 1px black solid;
+}
+
+#opacity_right{
+    
+
+}
+
+#demo{
+    height: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 298px;
+}
+
+.carousel-indicators > li{
+    background-color: rgba(193,128,255,1);
+    height: 10px;
+}
+
+.carousel-indicators{
+    padding-top: 30px;
+    padding-bottom: 6px;
+    margin-bottom: -8px;
+    
+}
+
+.carousel-control-prev-icon , .carousel-control-next-icon {
+    background-color: rgba(193,128,255,1);
+    height: 100px;
+}
+
+.carousel-control-prev{
+    padding-right: 150px;
+}
+
+.carousel-control-next{
+    padding-left: 150px;
+}
+
+.carousel-item{
+    background-color: white;
+}
+
+
+#proparallax {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    height: 300px;
+    width: 80%;
+}
+
+#proparallax img {
+    position: absolute;
+    height: 300px;
+    //width: 500px;
+    overflow: hidden;
+    //object-fit: cover;
+}
+
+@keyframes parallax_one {
+    /* controls img.one movement */
+    0% {
+        /* .imageloaded */
+        height: 300px;
+        //width: 500px;
+        width: 100%;
+        left: 0rem;
+        opacity: 1;
+    }
+    /* .imagehold runs from 0 to 27.77% */
+    27.77% {
+        /* .imageloaded */
+        width: 100%;
+        height: 300px;
+        left: 0rem;
+    }
+    27.78% {
+        /* .imagepreunload */
+        width: 100%;
+        height: 300px;
+        left: 0rem;
+        right: 50rem;
+    }
+    33.33% {
+        /* .imageunloaded */
+        height: 300px;
+        width: 100%;
+        left: 0rem;
+        right: 0rem;
+        opacity: 1;
+    }
+    33.34% {
+        /* imageoff */
+        opacity: 0;
+        width: 100%;
+    }
+    94.43% {
+        /* .imageon */
+        left: 0rem;
+        opacity: 0;
+        width: 100%;
+    }
+    94.44% {
+        /* .imageinitial */
+        height: 300px;
+        width: 100%;
+        left: 50rem;
+        opacity: 1;
+    }
+    100% {
+        /* .imageloaded */
+        width: 100%;
+        left: 0rem;
+        opacity: 1;
+    }
+}
+
+
+@keyframes parallax_two {
+    /* controls img.two movement */
+    0% {
+        /* .imageoff */
+        opacity: 0;
+
+        
+    }
+    27.77% {
+        /* .imageon */
+        left: 0rem;
+        opacity: 0;
+        width: 100%;
+    }
+    27.78% {
+        /* .imageinitial */
+        //width: 0rem;
+        height: 300px;
+        left: 50rem;
+        opacity: 1;
+        width: 100%;
+    }
+    33.33% {
+        /* .imageloaded */
+        //width: 500px;
+        left: 0rem;
+        width: 100%;
+    }
+    /* .imagehold runs from 33.34% - 61.10% */
+    61.10% {
+        /* .imageloaded */
+        width: 100%;
+        left: 0rem;
+    }
+    61.11% {
+        /* .imagepreunload */
+        width: 100%;
+        left: 0rem;
+        right: 50rem;
+    }
+    66.67% {
+        /* .imageunloaded */
+        width: 0rem;
+        right: 0rem;
+        left: 0rem;
+        height: 300px;
+        opacity: 1;
+        width: 100%;
+    }
+    66.68% {
+        /* .imageoff */
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        /* .imageoff */
+        opacity: 0;
+        width: 100%;
+    }
+}
+
+@keyframes parallax_three {
+    /* controls img.three movement */
+    0% {
+        /* .imageoff */
+        opacity: 0;
+        width: 100%;
+    }
+    61.10% {
+        /* .imageon */
+        opacity: 0;
+        width: 100%;
+    }
+    61.11% {
+        /* .imageinitial */
+        //width: 0rem;
+        height: 300px;
+        width: 100%;
+        left: 50rem;
+        opacity: 1;
+    }
+    66.67% {
+        /* .imageloaded */
+        //width: 500px;
+        //height: 300px;
+        left: 0rem;
+        width: 100%;
+    }
+    /* .imagehold runs from 66.67% - 94.43% */
+    94.43% {
+        /* .imageloaded */
+        //width: 500px;
+        //height: 300px;
+        left: 0rem;
+        width: 100%;
+    }
+    94.44% {
+        /* .imagepreunload */
+       // width: 500px;
+        //height: 300px;
+        left: 0rem;
+        right: 50rem;
+        width: 100%;
+    }
+    100% {
+        /* imageunloaded */
+        width: 100%;
+        
+        right: 0rem;
+        left: 0rem;
+        height: 300px;
+        opacity: 1;
+    }
+}
+
+#proparallax img.one {
+    animation-name: parallax_one;
+    height: 300px;
+    width: 500px;
+    /* controls img.one movement */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: forwards;
+    object-fit: cover;
+}
+
+#proparallax img.two {
+    animation-name: parallax_two;
+    height: 300px;
+    width: 500px;
+    /* controls img.two movement */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: forwards;
+    object-fit: cover;
+}
+
+#proparallax img.three {
+    animation-name: parallax_three;
+    /* controls img.three movement */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: forwards;
+    object-fit: cover;
+}
+
+.loghi {
+    //width:100%;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 25px;
+}
+
+.loghi img {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 2px;
+}
+
+//text carousel
+.content-slider {
+    width: 100%;
+    //height: 360px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 55%;
+    color: white;
+    margin-left: 35px;
+}
+
+.content-slider h1 {
+    font-size: 38pt;
+}
+
+.slider {
+    height: 320px;
+    width: 680px;
+    //margin: 40px auto 0;
+    overflow: visible;
+    position: relative;
+}
+
+.mask {
+    overflow: hidden;
+    height: 320px;
+}
+
+.slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+.slider li {
+    width: 680px;
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+}
+
+.slider .quote {
+    font-weight: bold;
+    font-size: 18pt;
+    //font-style: italic;
+}
+
+.slider .source {
+    font-size: 20px;
+    text-align: right;
+}
+
+.slider li.anim1 {
+    animation: cycle 22s linear infinite;
+}
+
+.slider li.anim2 {
+    animation: cycle2 22s linear infinite;
+}
+
+.slider li.anim3 {
+    animation: cycle3 22s linear infinite;
+}
+
+.slider li.anim4 {
+    animation: cycle4 22s linear infinite;
+}
+
+.slider li.anim5 {
+    animation: cycle5 22s linear infinite;
+}
+
+.slider:hover li {
+    animation-play-state: paused;
+}
+
+@keyframes cycle {
+    0% {
+        top: 0px;
+    }
+    4% {
+        top: 0px;
+    }
+    16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    50% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    96% {
+        top: -325px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes cycle2 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    16% {
+        top: -325px;
+        opacity: 0;
+    }
+    20% {
+        top: 0px;
+        opacity: 1;
+    }
+    24% {
+        top: 0px;
+        opacity: 1;
+    }
+    36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle3 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    36% {
+        top: -325px;
+        opacity: 0;
+    }
+    40% {
+        top: 0px;
+        opacity: 1;
+    }
+    44% {
+        top: 0px;
+        opacity: 1;
+    }
+    56% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle4 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    56% {
+        top: -325px;
+        opacity: 0;
+    }
+    60% {
+        top: 0px;
+        opacity: 1;
+    }
+    64% {
+        top: 0px;
+        opacity: 1;
+    }
+    76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle5 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    76% {
+        top: -325px;
+        opacity: 0;
+    }
+    80% {
+        top: 0px;
+        opacity: 1;
+    }
+    84% {
+        top: 0px;
+        opacity: 1;
+    }
+    96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #proparallax,
+    .slider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .slider {
+        width: 70%;
+    }
+    .mask {
+        width: 690px;
+    }
+    #proparallax {
+        display: none;
+    }
+}

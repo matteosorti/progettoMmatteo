@@ -1,0 +1,78 @@
+        <form [formGroup]="productsForm" (ngSubmit)="addToCart()">
+            <div formArrayName="steps">
+                <ng-container *ngIf="stepsArray.length > 0">
+                    <div *ngFor="let step of stepsArray; let i=index" [formGroupName]="i">
+                      <table class="tab-info">
+                        <tr>
+                          <td rowspan="9" id="td-img"><img class="img" src="{{products?.image}}"></td>
+                        </tr>
+                        <tr>
+                          <td id="bold">Prodotto</td>
+                        </tr>
+                        <tr>
+                          <td><app-products-preview *ngFor="let products of productsList | async" [products]="products" (detailEvent)="showDetail(products)"></app-products-preview></td>
+                        </tr>
+                        <tr>
+                          <td id="bold">Colore accessorio</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" formControlName="color" value="rosso" class="radio">
+                              <img src="../assets/images/radiocolors/red.png">
+                            </label>
+                            
+                            <label>
+                              <input type="radio" formControlName="color" value="arancio" class="radio">
+                              <img src="../assets/images/radiocolors/orange.png">
+                            </label> 
+  
+                            <label>
+                              <input type="radio" formControlName="color" value="giallo" class="radio">
+                              <img src="../assets/images/radiocolors/yellow.png">
+                            </label> 
+  
+                            <label>
+                              <input type="radio" formControlName="color" value="verde" class="radio">
+                              <img src="../assets/images/radiocolors/green.png">
+                            </label> 
+  
+                            <label>
+                              <input type="radio" formControlName="color" value="azzurro" class="radio">
+                              <img src="../assets/images/radiocolors/lightblue.png">
+                            </label> 
+  
+                            <label>
+                              <input type="radio" formControlName="color" value="blu" class="radio">
+                              <img src="../assets/images/radiocolors/blue.png">
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td id="bold">Testo prodotto</td>
+                        </tr>
+                        <tr>
+                          <td><app-input-text formControlName="description"></app-input-text></td>
+                        </tr>
+                        <tr>
+                          <td id="bold">Colore prodotto</td>
+                        </tr>
+                        <tr>
+                          <td><label>
+                          <input type="radio" formControlName="textColor" value="nero" class="radio">
+                          <img src="../assets/images/radiocolors/black.png">
+                        </label> 
+                        <label>
+                          <input type="radio" formControlName="textColor" value="bianco" class="radio">
+                          <img src="../assets/images/radiocolors/white.png">
+                        </label></td>
+                        </tr>
+                          <tr>
+                            <td><button type="button" (click)="redirectHome()"  id="annulla" class="btn-step">ANNULLA</button></td>
+                            <td><button type="submit" [disabled]="productsForm.invalid" id="prosegui" class="btn-step">AGGIUNGI AL CARRELLO</button> </td>
+                          </tr>
+                      </table>   
+                    </div>
+                </ng-container>
+              </div>
+        </form>
