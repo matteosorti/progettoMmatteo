@@ -38,7 +38,7 @@
             <tr>
                 <td>Spedito al sig.</td>
                 <td><ng-container *ngIf="user | async as currentUser" >
-                    {{currentUser?.name}}, {{currentUser?.surname}} 
+                    {{currentUser?.name}}  {{currentUser?.surname}} 
                     </ng-container></td>
             </tr>
         </table>
