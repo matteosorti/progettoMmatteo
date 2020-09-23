@@ -6,14 +6,14 @@ import { CartEffects } from './cart/cart.effects';
 import { CartState, cartReducer } from './cart/cart.reducers';
 
 export interface AppState {
-    todoState: ProductsState;
+    productState: ProductsState;
     usersState: UsersState;
     router: RouterReducerState<any>;
     cartState: CartState;
 }
 
 export const reducers: ActionReducerMap<AppState> = {
-    todoState: productsReducer,
+    productState: productsReducer,
     usersState: usersReducer,
     router: routerReducer,
     cartState: cartReducer

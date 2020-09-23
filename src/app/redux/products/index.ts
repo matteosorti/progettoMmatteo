@@ -4,7 +4,7 @@ import { AppState } from '..';
 import { Params } from '@angular/router';
 import { selectRouteParams } from '../router';
 
-export const selectProductsState = (state: AppState) => state.todoState;
+export const selectProductsState = (state: AppState) => state.productState;
 export const selectProducts = createSelector(
     selectProductsState,
     (state: ProductsState) => state.products

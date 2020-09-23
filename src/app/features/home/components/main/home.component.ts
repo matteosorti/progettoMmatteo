@@ -14,7 +14,7 @@ import { getCurrentUser } from 'src/app/redux/users';
 
 export class HomeComponent implements OnInit {
 
-  get todo(): Observable<Products>{
+  get product(): Observable<Products>{
     return this.store.pipe(select(getFirstProduct));
   }
 
