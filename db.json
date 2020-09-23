@@ -22,24 +22,6 @@
         "cvc": "dtry6jdtyj67ft7j"
       },
       "id": 1
-    },
-    {
-      "pagamento": {
-        "metodoPagamento": "carta",
-        "tipoCarta": "mastercard",
-        "numeroCarta": "1234567890",
-        "cvc": "123"
-      },
-      "id": 2
-    },
-    {
-      "pagamento": {
-        "metodoPagamento": "carta",
-        "tipoCarta": "mastercard",
-        "numeroCarta": "1234567",
-        "cvc": "1234"
-      },
-      "id": 3
     }
   ],
   "cart": [
