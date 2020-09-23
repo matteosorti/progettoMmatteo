@@ -44,12 +44,6 @@ export class CartEffects{
         return this.httpCommunicationsService.retrievePatchCall<User>(`users/${id}`, {...user});
     }
 
-    // retrieveAllProducts$: Observable<Action> = createEffect(()=>this.actions$.pipe(
-    //     ofType(retrieveAllProducts),
-    //     switchMap(action => this.httpCommunicationsService.retrieveGetCall<{name: string, id: number}[]>("products").pipe(
-    //         map(products => initCart({ products: products.map(item => item.name) }))
-    //     ))
-    // ))
 
     constructor(private actions$: Actions, 
         private httpCommunicationsService: HttpCommunicationsService, private router: Router, private store: Store) {

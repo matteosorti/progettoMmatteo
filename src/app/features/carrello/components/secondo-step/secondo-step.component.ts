@@ -51,8 +51,6 @@ export class SecondoStepComponent implements OnInit {
 
 
   datiUtente(){
-    console.log("prova");
-    console.log(this.dati.value);
     this.store.dispatch(addToUser({user: this.dati.value}));
     
   }
